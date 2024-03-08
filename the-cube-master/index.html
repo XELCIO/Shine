@@ -213,32 +213,6 @@
       </div>
       <div class="text text--complete">
         <span>Complete!</span>
-        <script>
-          // Fungsi untuk menampilkan pesan alert
-          function showCompletionMessage() {
-            alert("input this password : ariellequeensley");
-          }
-          // Fungsi untuk memeriksa kapan elemen muncul
-          function checkElementVisibility() {
-            var element = document.querySelector('.text--complete');
-            // Jika elemen ada dan terlihat, tampilkan pesan alert
-            if (element && isVisible(element)) {
-              showCompletionMessage();
-            }
-          }
-          // Fungsi untuk memeriksa apakah elemen terlihat di layar
-          function isVisible(element) {
-            var rect = element.getBoundingClientRect();
-            return (
-              rect.top >= 0 &&
-              rect.left >= 0 &&
-              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-          }
-          // Panggil fungsi untuk memeriksa kapan elemen muncul
-          checkElementVisibility();
-        </script>
       </div>
       <div class="text text--best-time">
         <icon trophy></icon>
