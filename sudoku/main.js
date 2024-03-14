@@ -694,3 +694,13 @@ function hidePopup() {
   // Sembunyikan pop-up
   document.getElementById("popupBox").style.display = "none";
 }
+var backgroundMusic = document.getElementById("backgroundMusic");
+
+function playBackgroundMusic() {
+  backgroundMusic.play();
+}
+
+function hidePopupAndPlayMusic() {
+  hidePopup(); // Panggil fungsi hidePopup untuk menyembunyikan pop-up
+  playBackgroundMusic(); // Panggil fungsi playBackgroundMusic untuk memainkan musik latar belakang
+}
