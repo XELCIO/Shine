@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사랑하려는 시도</title>
+  <meta name="description" content="21. Twenty One years of kindness, charm, and hope. What a journey (so far)">
+  <link rel="icon" href="/addons/favicon.png">
+  <link rel="stylesheet" href="/sudoku/style.css">
+  <link rel="stylesheet" href="/sudoku/popup.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="popupBox" class="popup-box full-width">
+    <div class="popup-title">WELCOME TO THE FINAL CHALLENGE</div>
+    <div class="popup-block">
+      <img src="https://media.tenor.com/wkzCX9s5kxQAAAAi/0906-peacegoma.gif">
+      <div class="btn-group"><button class="btn-submit" onclick="hidePopup()">Konfirm</button></div>
+    </div>
+  </div>
+  <a href="#" id="sidebar-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+
+  <h1 id="sudoku_title">SUDOKU</h1>
+
+  <div id="sudoku_menu">
+    <ul>
+      <li><a class="restart" href="#">New Game</a></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <div id="sudoku_container"></div>
+  <script src="/sudoku/main.js"></script>
+</body>
