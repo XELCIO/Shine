@@ -196,7 +196,7 @@
     }
 
     .content-container {
-      position: absolute;
+      position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -204,6 +204,17 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    h2 {
+      position: absolute; /* Atur posisi menjadi absolut */
+      top: 30%; /* Posisikan di atas */
+      left: 50%;
+      transform: translateX(-50%); /* Posisikan di tengah */
+      color: #e94d58; /* Warna teks */
+      margin-bottom: 20px; /* Berikan margin di bawah judul */
+      margin: 15px 0;
     }
 
     /* Gaya untuk slideshow */
@@ -219,12 +230,19 @@
     }
 
     img {
-      width: 100%;
+      position: relative;
+      width: 50%;
       height: auto;
+      justify-content: center;
+      display: grid;
+      left: 25%;
     }
 
     body .button-list {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
 
     body .button-list button {
@@ -262,14 +280,20 @@
 </head>
    
 <body>
+  <h2>SILAHKAN PILIH CHALLENGENYA</h2>
+  
   <div class="button-list" style="justify-content: center;">
-    <button class="fast white" onclick="redirectToCube()">FINAL</button>
+    <button class="fast white" onclick="redirectToCube()">CUBE</button>
+    <button onclick="redirectToSudoku()">SUDOKU</button>
   </div>
 
   <script>
     function redirectToCube() {
-      // Redirect ke yey.html
       window.location.href = '/the-cube-master/index.html';
+    }
+
+    function redirectToSudoku() {
+      window.location.href = '/sudoku.html';
     }
   </script>
   <script>
