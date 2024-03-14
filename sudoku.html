@@ -17,10 +17,10 @@
     <div class="popup-title">WELCOME TO THE FINAL CHALLENGE</div>
     <div class="popup-block">
       <img src="https://media.tenor.com/wkzCX9s5kxQAAAAi/0906-peacegoma.gif">
-      <div class="btn-group"><button class="btn-submit" onclick="hidePopup()">Konfirm</button></div>
+      <div class="btn-group"><button class="btn-submit" onclick="hidePopupAndPlayMusic()">Konfirm</button></div>
     </div>
   </div>
-  <a href="#" id="sidebar-toggle">
+  <a href="#" id="sidebar-toggle" onload="playBackgroundMusic()">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
@@ -36,5 +36,11 @@
   </div>
 
   <div id="sudoku_container"></div>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="/music/bgm/bgm.mp3" type="audio/mp3">
+    <!-- Sertakan format audio lain jika diperlukan -->
+    Your browser does not support the audio element.
+  </audio>
+
   <script src="/sudoku/main.js"></script>
 </body>
