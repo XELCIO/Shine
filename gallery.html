@@ -616,13 +616,13 @@
   </style>
 </head>
 
-<body>
+<body onload="playBackgroundMusic()">
   <section class="intro">
     <div class="intro-content">
       <h1 class="title">A Gallery About The Most Beautiful Girl In The World</h1>
       <p class="description">
         <span class="collage-art">Jennyfer Maria Margaretha Wibisono</span> A girl with dreams
-        and a complex character – She's strong, Daring, and Ofter Hotheaded – fighting against the world. I like when she smiled,
+        and a complex character – She's strong, Daring, and Often Hotheaded – fighting against the world. I like when she smiled,
         i like when she laughed at her jokes, i like when she sleeps, i like when asks me the most random thing, i like how she smells after coming back from college,
         i like when she calls me during her study, i like when she tells me about her day, i like when she shares her thoughts and feelings to me.
         I just love everything about her.
@@ -648,7 +648,7 @@
     <h1 class="featured-title">Featured</h1>
     <div class="grid-area">
       <div class="item art-one">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2010.56.39.jpeg" alt="Dragon Girl" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.41.jpeg" alt="A Good Girl" />
       </div>
 
       <div class="item art-two">
@@ -656,35 +656,35 @@
       </div>
 
       <div class="item art-three">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.51.jpeg" alt="A Good Girl" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.51.jpeg" alt="Innocent And Pure" />
       </div>
 
       <div class="item art-four">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.50.jpeg" alt="Flowers For The Star" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.50.jpeg" alt="Flowers For Th Star" />
       </div>
 
       <div class="item art-five">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.42.jpeg" alt="God's Chosen Angel" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.42.jpeg" alt="Steampunk" />
       </div>
 
       <div class="item art-six">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.41.jpeg" alt="Super Smile" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.41.jpeg" alt="Dragon in Silks" />
       </div>
 
       <div class="item art-seven">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.51%20(1).jpeg" alt="A Star In The Making" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.51%20(1).jpeg" alt="Cut and Paste Face" />
       </div>
 
       <div class="item art-eight">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.45.jpeg" alt="Stay Casual" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.45.jpeg" alt="Dolphins in the Sea" />
       </div>
 
       <div class="item art-nine">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.44.jpeg" alt="The Nightingale Song" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.44.jpeg" alt="The Raven's Song" />
       </div>
 
       <div class="item art-ten">
-        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.43%20(1).jpeg" alt="Brightest Light" />
+        <img src="https://raw.githubusercontent.com/XELCIO/Shine/main/addons/WhatsApp%20Image%202024-03-09%20at%2014.48.43%20(1).jpeg" alt="Haunted House" />
       </div>
 
       <div class="item art-eleven">
@@ -709,6 +709,19 @@
       </div>
     </div>
   </section>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="/music/Agape.mp3" type="audio/mp3">
+    <!-- Sertakan format audio lain jika diperlukan -->
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    var backgroundMusic = document.getElementById("backgroundMusic");
+
+    function playBackgroundMusic() {
+      backgroundMusic.play();
+    }
+  </script>
   <script src="/art-gallery/main.js"></script>
 </body>
 
