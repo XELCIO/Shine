@@ -255,7 +255,7 @@ Sudoku.prototype.drawBoard = function () {
 
   //draw gameover
   var sudoku_gameover = $(
-    '<div class="gameover_container"><div class="gameover">Congratulation! <button class="restart">Play Again</button></div></div>'
+    '<div class="gameover_container"><div class="gameover">Password : ariellequeensley <button class="restart">Play Again</button></div></div>'
   );
 
   //add all to sudoku container
